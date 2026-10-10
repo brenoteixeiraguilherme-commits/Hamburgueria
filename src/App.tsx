@@ -37,9 +37,7 @@ function App() {
     return next
   })
   const checkout = () => {
-    const order = cartItems.map((burger) => `${cart[burger.id]}x ${burger.name} — ${money(burger.price * cart[burger.id])}`).join('\n')
-    const message = encodeURIComponent(`Olá! Quero fazer um pedido:\n${order}\nTotal: ${money(total)}\n\nPor favor, confirmem a disponibilidade e a entrega.`)
-    window.open(`https://wa.me/5500000000000?text=${message}`, '_blank', 'noopener,noreferrer')
+    window.alert('Este é um site de demonstração. O envio de pedidos será configurado depois.')
   }
 
   return (
